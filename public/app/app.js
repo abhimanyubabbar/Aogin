@@ -8,6 +8,14 @@
 
         $logProvider.debugEnabled(true);
 
+        $routeProvider
+            .when("/", {
+
+                templateUrl:'/views/login.html',
+                controller: 'LoginController',
+                controllerAs: 'loginController'
+            })
+
     }]);
 
 })();

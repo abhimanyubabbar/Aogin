@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="aogin">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Aogin</title>
@@ -12,40 +12,12 @@
 </head>
 <body>
 
-<div class="center-block" style="width: 320px;">
+<div ng-view></div>
 
-    <div class="panel panel-default">
-
-        <div class="panel-heading text-center">
-            Login Application
-        </div>
-
-        <div class="panel-body">
-
-            <form name="loginForm" novalidate ng-submit="">
-
-                <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Username">
-                </div>
-
-                <div class="form-group">
-                    <input class="form-control"  type="password" placeholder="Password">
-                </div>
-
-                <div class="clearfix"></div>
-
-                <button class="btn btn-block btn-primary mt-lg" type="submit">Login
-                </button>
-
-            </form>
-
-        </div>
-    </div>
-
-
-
-</div>
-
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-route.js"></script>
+<script src="app/app.js"></script>
+<script src="app/controller/loginController.js"></script>
 
 </body>
 </html>
