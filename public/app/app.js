@@ -15,7 +15,9 @@
                 controller: 'LoginController',
                 controllerAs: 'loginController'
             })
-
+            .when("/landing",{
+                templateUrl:'views/landing-page.html'
+            })
     }]);
 
 })();
